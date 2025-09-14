@@ -50,7 +50,7 @@ function App() {
           <Calendar currentDate={currentDate} />
           <div className="text-center mt-6">
             <p className="text-gray-500 text-sm">
-              Próximo responsable desde el {new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000).getDate()} de {new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000).toLocaleString('es-ES', { month: 'long' })}
+              Próximo responsable 
             </p>
             <p className="text-lg font-semibold text-gray-700 mt-1">{nextResponsibleName}</p>
           </div>
