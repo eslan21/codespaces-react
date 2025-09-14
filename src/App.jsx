@@ -27,7 +27,7 @@ function App() {
   const nextResponsibleName = people[(responsibleIndex + 1) % people.length].name;
 
   return (
-    <div className="flex h-screen bg-gray-100 font-sans">
+    <div className="flex lg:h-screen w-screen bg-gray-100 font-sans  flex-col-reverse lg:flex-row">
       <Sidebar people={people} responsibleIndex={responsibleIndex} />
       <div className="flex-1 p-8">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">Asignación de Responsables</h1>
