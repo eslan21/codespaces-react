@@ -4,9 +4,11 @@ import Sidebar from './components/Sidebar';
 import Calendar from './components/Calendar';
 
 const people = [
-  { id: 1, name: 'Ana García' },
-  { id: 2, name: 'Carlos Rodríguez' },
-  { id: 3, name: 'María López' },
+  { id: 1, name: 'Freddy' },
+  { id: 2, name: 'Adrian' },
+  { id: 3, name: 'Sonnya' },
+  { id: 4, name: 'Roxana' },
+  { id: 5, name: 'Alexa' },
 ];
 
 function App() {
