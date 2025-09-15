@@ -13,14 +13,14 @@ const people = [
 
 function App() {
   const [responsibleIndex, setResponsibleIndex] = useState(0);
-  const [currentDate, setCurrentDate] = useState(new Date());
+  const [currentDate, setCurrentDate] = useState(new Date()); // Fecha inicial: 1 de enero de 2025
 
   useEffect(() => {
     // Calcular el responsable basándose en la semana del año
     const startOfYear = new Date(currentDate.getFullYear(), 0, 1);
     const diff = currentDate - startOfYear;
     const oneWeek = 1000 * 60 * 60 * 24 * 7;
-    const weekNumber = Math.floor(diff / oneWeek);
+    const weekNumber = Math.floor(diff / oneWeek) + 1;
 
     // Rotar el responsable
     setResponsibleIndex(weekNumber % people.length);
