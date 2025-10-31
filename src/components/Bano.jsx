@@ -1,19 +1,14 @@
-import './App.css';
 import React, { useState, useEffect, useMemo } from 'react';
-import Sidebar from './components/Sidebar';
-import Calendar from './components/Calendar';
-import Bano from './components/Bano';
 
+import Calendar from './Calendar';
 
 const people = [
-  { id: 1, name: 'Freddy' },
-  { id: 2, name: 'Adrian' },
-  { id: 3, name: 'Sonnya' },
-  { id: 4, name: 'Roxana' },
-  { id: 5, name: 'Alexa' },
+ 
+    { id: 1, name: 'Sonnya' },
+    { id: 2, name: 'Alexa' },
+    { id: 3, name: 'Adrian' },
 ];
 
-// Función para calcular el número de semana (lunes como primer día)
 const getWeekNumber = (date) => {
   const target = new Date(date.valueOf());
   
@@ -35,8 +30,9 @@ const getWeekNumber = (date) => {
   return weeksDiff + 1;
 };
 
-function App() {
-  const [currentDate, setCurrentDate] = useState(new Date()); 
+
+ function Bano() {
+const [currentDate, setCurrentDate] = useState(new Date()); 
 
   // Memoizar cálculos costosos
   const weekNumber = useMemo(() => getWeekNumber(currentDate), [currentDate]);
@@ -56,13 +52,13 @@ function App() {
     [responsibleIndex]
   );
 
+    
   return (
-    <div className="flex lg:h-screen w-screen bg-gray-100 font-sans flex-col-reverse lg:flex-row">
-      <Sidebar people={people} responsibleIndex={responsibleIndex} />
+    
       
       <main className="flex-1 p-8">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">
-          Asignación de Responsables
+          Limpieza de Baño
         </h1>
         
         <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto">
@@ -89,10 +85,11 @@ function App() {
             </p>
           </footer>
         </div>
-        <Bano/>
+        
       </main>
-    </div>
+    
   );
 }
 
-export default App;
+
+export default Bano
