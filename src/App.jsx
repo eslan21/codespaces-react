@@ -57,12 +57,12 @@ function App() {
   );
 
   return (
-    <div className="flex lg:h-screen w-screen bg-gray-100 font-sans flex-col-reverse lg:flex-row">
+    <div className="flex lg:h-auto w-screen bg-gray-100 font-sans flex-col-reverse lg:flex-row">
       <Sidebar people={people} responsibleIndex={responsibleIndex} />
       
       <main className="flex-1 p-8">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">
-          Asignación de Responsables
+          Limpieza general de la casa
         </h1>
         
         <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto">
@@ -89,7 +89,7 @@ function App() {
             </p>
           </footer>
         </div>
-        <Bano/>
+          <Bano/>
       </main>
     </div>
   );

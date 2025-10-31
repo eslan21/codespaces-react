@@ -58,7 +58,7 @@ const [currentDate, setCurrentDate] = useState(new Date());
       
       <main className="flex-1 p-8">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">
-          Limpieza de Baño
+          Limpieza del Baño
         </h1>
         
         <div className="bg-white rounded-xl shadow-lg p-6 max-w-2xl mx-auto">

@@ -5,7 +5,7 @@ function Sidebar({ people, responsibleIndex }) {
     <div className="lg:w-64 bg-white p-6 shadow-md rounded-tr-xl rounded-br-xl">
       <h2 className="text-xl font-bold mb-4 text-gray-800">Responsables</h2>
       <div className="border-b border-gray-200 pb-4 mb-4">
-        <p className="text-gray-500 text-sm mb-2">Lista de Personas</p>
+        <p className="text-gray-500 text-sm mb-2">Lista de Limpieza General</p>
         <ul className="space-y-2">
           {people.map((person, index) => (
             <li
